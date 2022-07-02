@@ -1,0 +1,47 @@
+h1 {
+	margin: 150px 100px 200px 150px;
+}
+
+p {
+	margin: 50px 50px 50px;
+}
+
+.cc-selector input{
+    margin:30px;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+.papel{background-image:url(https://i.imgur.com/KcrJLnP.png);}
+.pedra{background-image:url(https://i.imgur.com/zn4F0aP.png);}
+.tesoura{background-image:url(https://i.imgur.com/OsqobiU.png);}
+
+.cc-selector input:active +.grupo-cc{opacity: .9;}
+.cc-selector input:checked +.grupo-cc{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.grupo-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:70px;height:70px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.5) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.5) grayscale(1) opacity(.7);
+            filter: brightness(1.5) grayscale(1) opacity(.7);
+}
+.grupo-cc:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+/* Extras */
+a:visited{color:#888}
+a{color:#444;text-decoration:none;}
+p{margin-bottom:.3em;}
